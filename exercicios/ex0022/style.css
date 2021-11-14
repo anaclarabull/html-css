@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    color:chocolate
+}
+h1#principal {
+    text-align: center;
+}
+
+h2 {
+    color: coral;
+}
+
+h3{
+    border: 20px solid black;
+    padding: 10px;
+    border-image-source: url('bordaa.png');
+    border-image-slice: 20;
+}
+
+div.divs{
+    background-color: orange;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%
+}
+div.divs:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+div#ex {
+    width: 126px;
+}
+div#ex:hover{
+    color: orange;
+}
+
+div > p/*parágrafos que estão dentro da div, ou seja, FILHO*/{
+    display: none;
+}
+div#ex:hover > p{
+    display: block;
+}

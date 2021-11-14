@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io (2)/favicon.ico" type="image/x-icon"> <!--colocar ícone no navegador-->
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+   <!-- <style>
+        body{
+            background-color: cornsilk;
+        }
+        h1 {
+            color:brown
+        }
+        p{
+            text-align: justify;
+        }
+    </style>--><!--CSS interno-->
+</head>
+<body>
+    <h1>Abreviações e criando Emoji</h1>
+    <p>
+        <mark>oi</mark>,  <label title="tudo">td</label> <abbr title="bem">bm</abbr> <abbr title="com">cm</abbr> <abbr title="você">vc</abbr>? <br> tudo bem?
+        &#x1F596
+    </p>
+
+    <h1>Criando tabelas</h1>
+    <ul type="square">
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+    </ul>
+    <ol type="1">
+        <li>Rotina</li>
+        <ul type="disc">
+        <li>acordar</li>
+        <li>tomar cafe</li>
+        <li>escovar os dentes</li>
+        </ul>
+    </ol>
+    
+    <h1>Criando link externo</h1>
+    <p>Você pode acessar meu <a href="https://github.com/anaclarabull" target="_blank" rel="externa">Github</a> e também o meu <a href="https://www.linkedin.com/in/ana-clara-mendes-bull-64649a149/">Linkedin</a></p>
+
+    <h1>Criando link interno</h1>
+    <p>Esta é a primeira página do site. Acesse a <a href="pag002.html" rel= "next">segunda</a></p>.
+
+    <h1>Link para download</h1>
+    <ul>
+        <li><a href="curriculo/AnaClaraMendesBull.pdf"  download="AnaClaraMendesBull.pdf" type="application/pdf">Baixar currículo em PDF</a></li><!--EM PDF-->
+
+        <li><a href="curriculo/AnaClaraMendesBull.pdf" download="AnaClaraMendesBull.zip" type="application/zip">Baixar currículo em ZIP</a></li><!--EM ZIP-->
+    </ul>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Abra esse site em dispositivos diferentes.</p>
+
+    <picture>
+        <source media="(max-width: 750px)"srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Adicionar áudio</h1>
+    <!--PRIMEIRA MANEIRA-->
+    <!--<audio src="midia/Zoom - Vibe Tracks.mp3" controls autoplay></audio>-->
+
+    <!--SEGUNDA MANEIRA-->
+    <audio preload= "auto" controls loop>
+        <source src="midia/Zoom - Vibe Tracks.mp3" type="audio/mpeg"> <!--mp3-->
+        <source src="midia/Zoom - Vibe Tracks.mp3" type="audio/ogg"> <!--ogg-->
+        <source src="midia/Zoom - Vibe Tracks.mp3" type="audio/wav"> <!--wav (muito pesado)-->
+    </audio>
+    <p>
+        Infelizmente seu navegador não é compatível com o formato da música. <a href="midia/Zoom - Vibe Tracks.mp3">Clique aqui</a> para realizar o download.
+    </p>
+    <h1>Adicionar vídeo (hospedagem local)</h1>
+    <!--PRIMEIRA MANEIRA-->
+    <!--<video src="video/pexels-yaroslava-borz-10059976.mp4" controls width="50%"></video>-->
+
+    <!--SEGUNDA MANEIRA-->
+    <video controls poster="video/Cópia de Ana Clara Mendes Bull.png" width="50%">
+        <source src="video/pexels-yaroslava-borz-10059976.mp4" type="video/mp4"> <!--mp4-->
+        <!--Colocar todos os tipos ex: m4v/webm/ogg-->
+    </video>
+
+    <h1>Adicionar vídeo (SEM hospedagem local)</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/O0GFMi00gxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1 style="color: blueviolet;">Testando o CSS inline</h1><!--CSS inline-->
+    <hr>
+</body>
+</html>
